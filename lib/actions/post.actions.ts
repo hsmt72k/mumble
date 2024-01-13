@@ -13,7 +13,8 @@ interface Params {
   path: string;
 }
 
-export const maxDuration = 300;
+export const maxDuration = 5;
+export const dynamic = 'force-dynamic';
 
 export async function createPost({
   text,
