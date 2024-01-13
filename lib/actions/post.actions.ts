@@ -13,6 +13,8 @@ interface Params {
   path: string;
 }
 
+export const maxDuration = 300;
+
 export async function createPost({
   text,
   author,
