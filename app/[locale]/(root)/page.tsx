@@ -1,10 +1,10 @@
 import { currentUser } from '@clerk/nextjs';
 
-// import { fetchPosts } from '@/lib/actions/post.actions';
+import { fetchPosts } from '@/lib/actions/post.actions';
 // import PostCard from '@/components/cards/PostCard';
 
 export default async function Home() {
-  // const result = await fetchPosts(1, 30);
+  const result = await fetchPosts(1, 30);
   // const user = await currentUser();
 
   return (
