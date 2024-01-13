@@ -46,7 +46,7 @@ function Post({ userId }: Props) {
       path: pathname,
     });
 
-    router.push('/');
+    // router.push('/');
     return;
   };
 

@@ -28,27 +28,28 @@ export async function createPost({
       { _id: 1 },
     );
 
-    const createdPost = await Post.create({
-      text,
-      author,
-      // Assign communityId if provided,
-      // or leave it null for personal account
-      community: communityIdObject,
-    });
+    // const createdPost = await Post.create({
+    //   text,
+    //   author,
+    //   // Assign communityId if provided,
+    //   // or leave it null for personal account
+    //   community: communityIdObject,
+    // });
 
-    // Update User model
-    await User.findByIdAndUpdate(author, {
-      $push: { posts: createdPost._id },
-    });
-
+    // // Update User model
+    // await User.findByIdAndUpdate(author, {
+    //   $push: { posts: createdPost._id },
+    // });
+    console.log('here: ');
     if (communityIdObject) {
       // Update Community model
-      await Community.findByIdAndUpdate(communityIdObject, {
-        $push: { posts: createdPost._id },
-      });
+      // await Community.findByIdAndUpdate(communityIdObject, {
+      //   $push: { posts: createdPost._id },
+      // });
+      console.log('communityIdObject: ', communityIdObject);
     }
 
-    revalidatePath(path);
+    // revalidatePath(path);
   } catch (error: any) {
     throw new Error(`Error creating post: ${error.message}`);
   }
