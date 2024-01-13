@@ -24,10 +24,10 @@ export default authMiddleware({
     '/',
     '/:locale/sign-in',
     '/:locale/sign-up',
-    '/:locale/api/webhook/clerk',
+    // '/:locale/api/webhook/clerk',
     // '/:locale/api/uploadthing'
   ],
-  ignoredRoutes: ['/:locale/api/webhook/clerk'],
+  // ignoredRoutes: ['/:locale/api/webhook/clerk'],
 
   afterAuth(auth, req) {
     // Handle users who aren't authenticated
