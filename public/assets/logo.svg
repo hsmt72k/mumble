@@ -1,0 +1,15 @@
+<svg width="500" height="422" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" enable-background="new 0 0 500 500" version="1.1" xml:space="preserve">
+  <g class="layer">
+   <title>Layer 1</title>
+   <g id="OBJECTS">
+    <g id="svg_15">
+     <linearGradient id="SVGID_00000069389696427429847900000000250062504470647476_" x1="0.5" x2="0.5" y1="1" y2="0">
+      <stop offset="0" stop-color="#9075FD"/>
+      <stop offset="0.45" stop-color="#BA68FD"/>
+      <stop offset="1" stop-color="#E95AFE"/>
+     </linearGradient>
+     <path d="m250.63,427.31l-90.48,-163.47l0,-41.18l91.68,165.74l123.93,-193.96l1.28,205.84l102.8,0l-1.12,-379.51l-95.07,0l-132.77,223.06l-108.58,-200.94l0.84,191.57l0,185.75l-142.58,0l0,-419.37l104.83,0l0,19.93l-84.9,0l0,379.51l102.72,0l0,-165.78l-1.04,-233.66l19.01,0l0.56,0l0.48,0l109.5,202.61l120.58,-202.61l126.32,0l1.2,419.37l-142.58,0l-1,-158.21l-105.59,165.3zm-169.37,-381.42l-19.69,0l0,329.17l19.69,0l0,-329.17zm356.63,0l-19.93,0l0,329.21l19.93,0l0,-329.21z" fill="url(#SVGID_00000069389696427429847900000000250062504470647476_)" id="svg_24"/>
+    </g>
+   </g>
+  </g>
+ </svg>

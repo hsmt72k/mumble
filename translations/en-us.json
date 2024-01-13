@@ -1,0 +1,19 @@
+{
+  "useLocaleNames": {
+    "en-us": "English",
+    "ja-jp": "Japanese"
+  },
+  "LeftSidebar": {
+    "Home": "Home",
+    "Search": "Search",
+    "Activity": "Activity",
+    "Create Post": "Create Post",
+    "Communities": "Communities",
+    "Profile": "Profile",
+    "Logout": "Logout"
+  },
+  "RightSidebar": {
+    "Suggested Communities": "Suggested Communities",
+    "Suggested Users": "Suggested Users"
+  }
+}

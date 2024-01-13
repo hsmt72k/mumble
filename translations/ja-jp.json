@@ -1,0 +1,19 @@
+{
+  "useLocaleNames": {
+    "en-us": "英語",
+    "ja-jp": "日本語"
+  },
+  "LeftSidebar": {
+    "Home": "ホーム",
+    "Search": "検索",
+    "Activity": "アクティビティ",
+    "Create Post": "ポスト作成",
+    "Communities": "コミュニティ",
+    "Profile": "プロフィール",
+    "Logout": "ログアウト"
+  },
+  "RightSidebar": {
+    "Suggested Communities": "関連するコミュニティ",
+    "Suggested Users": "関連するユーザ"
+  }
+}

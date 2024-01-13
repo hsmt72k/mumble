@@ -1,0 +1,48 @@
+<svg:svg
+    width="78"
+    height="66"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    enable-background="new 0 0 500 500"
+    version="1.1"
+    xml:space="preserve">
+  <svg:g class="layer">
+    <svg:title>Layer 1</svg:title>
+    <svg:g id="OBJECTS">
+      <svg:g id="svg_30">
+        <svg:g id="svg_34">
+          <svg:path 
+            d="m11.42,63.92l0,0
+               c7.53,0 12.72,-7.54 10.05,-14.58
+               l-10.05,-26.43
+               l-10.05,26.43
+               c-2.68,7.04 2.52,14.58 10.05,14.58
+               z" 
+            fill="#69AF79" 
+            id="svg_35"
+          />
+          <svg:path 
+            d="m65.13,63.92l0,0
+               c7.53,0 12.73,-7.54 10.05,-14.58
+               l-10.05,-26.43
+               l-10.05,26.43
+               c-2.67,7.04 2.52,14.58 10.05,14.58
+               z" 
+            fill="#69AF79" 
+            id="svg_36"
+          />
+          <svg:path 
+            d="m38.27,1.06l0,0
+               c-9.99,0 -16.88,10 -13.33,19.34
+               l13.33,35.07
+               l13.34,-35.07
+               c3.55,-9.34 -3.34,-19.34 -13.34,-19.34
+               z" 
+            fill="#75D386" 
+            id="svg_37"
+          />
+        </svg:g>
+      </svg:g>
+    </svg:g>
+  </svg:g>
+</svg:svg>
