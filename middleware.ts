@@ -18,15 +18,9 @@ export default authMiddleware({
   beforeAuth: (req) => {
     return intlMiddleware(req);
   },
-  
-  apiRoutes: ['/:locale/api/uploadthing'],
-  publicRoutes: [
-    '/',
-    '/:locale/sign-in',
-    '/:locale/sign-up',
-    '/:locale/api/webhook/clerk',
-  ],
-  ignoredRoutes: ['/:locale/api/webhook/clerk'],
+
+  apiRoutes: ['/:locale/api/uploadthing', '/:locale/api/webhook/clerk'],
+  publicRoutes: ['/', '/:locale/sign-in', '/:locale/sign-up'],
 
   afterAuth(auth, req) {
     // Handle users who aren't authenticated
