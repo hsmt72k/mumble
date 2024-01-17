@@ -24,7 +24,6 @@ export default authMiddleware({
   publicRoutes: [
     '/:locale/sign-in(.*)',
     '/:locale/sign-up(.*)',
-    '/:locale/api/webhook/clerk',
   ],
   ignoredRoutes: [],
 
