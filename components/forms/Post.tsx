@@ -38,7 +38,6 @@ function Post({ userId }: Props) {
   });
 
   const onSubmit = async (values: z.infer<typeof PostValidation>) => {
-    console.log('ORG ID: ', organization);
     await createPost({
       text: values.post,
       author: userId,
@@ -46,8 +45,7 @@ function Post({ userId }: Props) {
       path: pathname,
     });
 
-    // router.push('/');
-    return;
+    router.push('/');
   };
 
   return (

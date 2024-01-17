@@ -3,7 +3,7 @@
 import { FilterQuery, SortOrder } from 'mongoose';
 
 import Community from '@/lib/models/community.model';
-import Thread from '@/lib/models/post.model';
+import Post from '@/lib/models/post.model';
 import User from '@/lib/models/user.model';
 
 import { connectToDB } from '@/lib/mongoose';
@@ -76,8 +76,8 @@ export async function fetchCommunityPosts(id: string) {
     connectToDB();
 
     const communityPosts = await Community.findById(id).populate({
-      path: 'threads',
-      model: Thread,
+      path: 'posts',
+      model: Post,
       populate: [
         {
           path: 'author',
@@ -87,7 +87,7 @@ export async function fetchCommunityPosts(id: string) {
         },
         {
           path: 'children',
-          model: Thread,
+          model: Post,
           populate: {
             path: 'author',
             model: User,
@@ -290,7 +290,7 @@ export async function deleteCommunity(communityId: string) {
     }
 
     // Delete all threads associated with the community
-    await Thread.deleteMany({ community: communityId });
+    await Post.deleteMany({ community: communityId });
 
     // Find all users who are part of the community
     const communityUsers = await User.find({ communities: communityId });

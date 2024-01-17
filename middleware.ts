@@ -2,6 +2,7 @@ import { authMiddleware, redirectToSignIn } from '@clerk/nextjs';
 import createMiddleware from 'next-intl/middleware';
 
 import { defaultLocale, locales } from '@/i18nconfig';
+import { NextResponse } from 'next/server';
 
 const intlMiddleware = createMiddleware({
   locales,
@@ -19,15 +20,13 @@ export default authMiddleware({
     return intlMiddleware(req);
   },
 
-  apiRoutes: ['/:locale/api/uploadthing'],
+  apiRoutes: ['/:locale/api/uploadthing', '/:locale/api/webhook/clerk'],
   publicRoutes: [
-    '/',
-    '/:locale/sign-in',
-    '/:locale/sign-up',
+    '/:locale/sign-in(.*)',
+    '/:locale/sign-up(.*)',
     '/:locale/api/webhook/clerk',
-    // '/:locale/api/uploadthing'
   ],
-  ignoredRoutes: ['/:locale/api/webhook/clerk'],
+  ignoredRoutes: [],
 
   afterAuth(auth, req) {
     // Handle users who aren't authenticated
