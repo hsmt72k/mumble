@@ -20,7 +20,7 @@ export default authMiddleware({
     return intlMiddleware(req);
   },
 
-  apiRoutes: ['/:locale/api/uploadthing', '/:locale/api/webhook/clerk'],
+  apiRoutes: ['/:locale/api/uploadthing'],
   publicRoutes: [
     '/:locale/sign-in(.*)',
     '/:locale/sign-up(.*)',
